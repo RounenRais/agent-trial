@@ -1,14 +1,10 @@
-const caseData=require("./caseData.js");
-const {searchEvidence,readEvidence}=require("./tools.js");
-const results = searchEvidence(caseData.evidence, "kamera");
+const { runAgent } = require("./agent.js");
 
-console.log("Bulunan deliller:", results);
-
-if (results.length > 0) {
-  const firstEvidence = readEvidence(
-    caseData.evidence,
-    results[0].id
-  );
-
-  console.log("İlk delilin içeriği:", firstEvidence);
-}
+runAgent({
+  name: "Avukat",
+  role: "LAWYER",
+  goal:
+    "Sanığın suçsuz olduğunu kanıtlamak için en güçlü savunmayı kur. Belirsizlikleri ve alternatif açıklamaları savunma lehine kullan."
+}).catch((error) => {
+  console.error("Avukat çalışırken hata oluştu:", error.message);
+});
