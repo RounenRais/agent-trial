@@ -55,5 +55,11 @@ console.log("\nHâkim karar hazırlıyor...");
 
 main().catch((error) => {
   console.error("Duruşma durdu:", error.message);
+  console.error("Model ayrıntıları:", error.details);
+  console.error("API hata ayrıntısı:", {
+  status: error.status,
+  code: error.error?.code ?? error.code,
+  failedGeneration: error.error?.failed_generation
+});
   process.exitCode = 1;
 });

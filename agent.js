@@ -57,8 +57,8 @@ const submitArgumentTool = {
     properties: {
       text: {
         type: "string",
-        description:
-          "Mahkemeye sunulacak, en fazla 2000 karakterlik konuşma."
+    description:
+  "Mahkemeye sunulacak kısa konuşma. Yaklaşık 1200 karakter hedefle."
       },
 
       evidenceIds: {
@@ -113,6 +113,7 @@ function createAgent({ role, name, goal }) {
       "Turu bitirmek için submitArgument aracını tek başına çağır. " +
       "En fazla iki delile atıf yap; yalnızca okuduğun veya ortak " +
       "tutanakta gördüğün delilleri seçebilirsin. " +
+      "Konuşmanda yaklaşık 1200 karakter hedefle. " +
       "Delilsiz bir açıklama için evidenceIds boş olabilir.",
 
     prompt:
@@ -144,8 +145,9 @@ function createAgent({ role, name, goal }) {
           "Yeni duruşma turu. Son iddialara karşılık ver " +
           "ve submitArgument ile tamamla.",
         round,
-        newPublicEntries: newEntries
-      }));
+newPublicEntries: newEntries.filter(
+  entry => entry.role !== role
+)      }));
 
       seenEntries = publicRecord.length;
 
@@ -157,8 +159,23 @@ function createAgent({ role, name, goal }) {
           name + " / Duruşma " + round + " / Adım " + step
         );
 
-        const reply = await session.next();
+const mustSubmit =
+  step >= 5 ||
+  (searches >= 2 && reads >= 1);
 
+if (mustSubmit) {
+  session.addUser(
+    "Araştırmayı bitir. Şimdi yalnızca submitArgument çağır. " +
+    "Konuşmanı yaklaşık 700–1200 karakter tut; üst sınır 2000. " +
+    "En fazla iki delil seç. Kullanabileceğin kimlikler: " +
+    "Konuşmanı yaklaşık 1200 karakter tut. " +
+    JSON.stringify([...knownEvidence.keys()])
+  );
+}
+
+const reply = await session.next({
+  toolName: mustSubmit ? "submitArgument" : undefined
+});
         if (reply.toolCalls.length === 0) {
           session.addUser(
             "Bu turun konuşmasını submitArgument aracını kullanarak sun."
@@ -179,16 +196,17 @@ function createAgent({ role, name, goal }) {
 
               const { text, evidenceIds } = call.input || {};
 
-              if (
-                typeof text !== "string" ||
-                !text.trim() ||
-                text.length > 2000
-              ) {
-                throw new Error(
-                  "Konuşma 1–2000 karakter uzunluğunda bir metin olmalı."
-                );
-              }
+   if (typeof text !== "string" || !text.trim()) {
+  throw new Error("Konuşma boş olmayan bir metin olmalı.");
+}
 
+if (text.trim().length > 2000) {
+  console.warn(
+    name + " / Konuşma uzunluk hedefini aştı:",
+    text.trim().length,
+    "karakter. Konuşma kabul edildi."
+  );
+}
               if (
                 !Array.isArray(evidenceIds) ||
                 evidenceIds.some((id) => typeof id !== "string")
@@ -286,13 +304,19 @@ function createAgent({ role, name, goal }) {
               id: call.id,
               content: JSON.stringify(result)
             };
-          } catch (error) {
-            return {
-              id: call.id,
-              content: error.message,
-              isError: true
-            };
-          }
+       } catch (error) {
+  console.error(
+    name + " / Araç reddedildi:",
+    call.name,
+    error.message
+  );
+
+  return {
+    id: call.id,
+    content: error.message,
+    isError: true
+  };
+}
         });
 
         session.addToolResults(results);

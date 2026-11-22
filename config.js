@@ -19,7 +19,8 @@ function getAgentConfig(role) {
     "anthropic",
     "openai",
     "openrouter",
-    "groq"
+    "groq",
+    "onysoft"
   ];
 
   if (!allowedProviders.includes(provider)) {

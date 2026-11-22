@@ -1,0 +1,192 @@
+{
+  "caseDescription": "\n    Bu kurmaca davada MaviHat mühendisi Deniz, 14 Ekim 2026'da\n    PX-41 prototipini ve hazırladığı dijital arşivi, şirketin\n    çalıştığı KuzeyTest laboratuvarına gönderdi.\n\n    Kimlik ve aktarım eylemi iki tarafça kabul ediliyor.\n    Prototip ertesi gün döndü.\n\n    Şirket, Deniz'in test iznini bilerek aşarak korumalı üretim\n    verilerini dışarı aktardığını ileri sürüyor.\n    Deniz izinli test paketi hazırladığını savunuyor.\n\n    KuzeyTest'in Deniz'e yaptığı kişisel ödeme kabul ediliyor;\n    amacı tartışmalı.\n\n    İzin kapsamı, paketin içeriği, yapılandırma değişikliği\n    ve kasıt delillerle tartışılacak.\n\n    Suçlama başlangıçta doğru kabul edilmez.\n    Simülasyon, iki tarafın sunulan kayıtları açıklama gücünü\n    karşılaştırır.\n  ",
+  "publicRecord": [
+    {
+      "round": 1,
+      "role": "PROSECUTION",
+      "name": "Savcı",
+      "text": "Sayın Mahkeme,\n\nSavunma, Deniz'in izinli bir test paketi hazırladığını ileri sürüyor. Bu iddia, elimizdeki kayıtlarla bağdaşmıyor.\n\nKaynak bilgi: E4 numaralı kurumsal mesajda Ece, Deniz'e şunu yazmıştır: \"Standart test kopyaları için önceki onay geçerli. Gerçek üretim parametrelerini eklemeyin; onlar için ayrıca konuşmamız gerekir.\" Mesaj 14 Ekim 2026 saat 15.02'de gönderilmiş, Deniz'in hesabında 15.07'de açılmıştır. Aynı kayıt, önceki yazışmadaki onayın sentetik kalibrasyon örneklerine ait olduğunu da belirtmektedir.\n\nKaynak bilgiden çıkan sonuç: Onay, sentetik kalibrasyon örneklerini kapsıyordu. Üretim parametreleri açıkça dışarıda bırakılmış ve bunun için ayrı bir görüşme öngörülmüştür. Deniz'in mesajı açtığı andan itibaren kapsam sınırı ona bildirilmiştir.\n\nYorum: Kapsam sınırı yazılı ve açıktır. Deniz'in gönderdiği dijital arşivde korumalı üretim verilerinin bulunduğu iddiası, kayıtla birlikte değerlendirildiğinde, sınırın bilinerek aşıldığını gösterir. \"Test paketi\" savunması, onayın kapsamadığı bir içeriği onay kapsamında saymak zorundadır; bu yorum kayıttaki açık ifadeyle çelişir.\n\nAyrıca iddia edilen ödeme ve yapılandırma değişikliği konusu, izin sınırının bilerek aşıldığı yönündeki değerlendirmeyi destekler. Bu konuda kesin sonuç için paketin içeriği ve yapılandırma kayıtları ayrıca incelenmelidir. Ancak mevcut kayıt, \"izinli test\" savunmasını zayıflatmaktadır.\n\nSonuç olarak, E4 bağlamında Deniz'in izin kapsamını bilerek aştığı ve korumalı üretim verilerini dışarı aktardığı savunulmaktadır. Savunmanın açıklaması, bu yazılı sınırı dikkate almadan yapılmıştır.",
+      "evidence": [
+        {
+          "id": "E4",
+          "title": "Veri sorumlusunun izin kapsamı mesajı",
+          "source": "Ece'nin kurumsal mesajı / 14 Ekim 2026 15.02",
+          "relatedIds": [
+            "E2",
+            "E3",
+            "E10",
+            "E19"
+          ],
+          "content": "\n        Ece'nin Deniz'e mesajı:\n\n        'Standart test kopyaları için önceki onay geçerli.\n        Gerçek üretim parametrelerini eklemeyin;\n        onlar için ayrıca konuşmamız gerekir.'\n\n        Mesaj Deniz'in hesabında 15.07'de açıldı.\n        Önceki yazışmadaki onay sentetik kalibrasyon\n        örneklerine ait.\n      "
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "role": "LAWYER",
+      "name": "Avukat",
+      "text": "Sayın Mahkeme,\n\nSavcılığın E4'e dayanan iddiası, kendi kaydının sınırlarını aşan bir sonuç çıkarıyor. E4'teki ifade açıktır: onay sentetik kalibrasyon örneklerine aittir ve gerçek üretim parametreleri için ayrıca görüşülmesi öngörülmüştür. Bu, \"izin her şeyi kapsıyordu\" demek değildir; ancak \"izin hiçbir şeyi kapsamıyordu\" da değildir. Savcılık, kapsam sınırının varlığını, sınırın bilerek aşıldığı sonucuna dönüştürüyor; aradaki kanıt halkası eksiktir.\n\nKaynak bilgi: E4 mesajı 15.02'de gönderilmiş, Deniz'in hesabında 15.07'de açılmıştır. Kayıt, mesajın açıldığı saati gösterir; arşivin ne zaman oluşturulduğunu veya gönderildiğini göstermez. Dolayısıyla \"açtığı andan itibaren kapsam ona bildirilmiştir\" tespiti doğru olabilir, fakat bu bilginin eylemden önce fiilen kullanıldığı kanıtlanmamıştır. Savcılığın kasıt çıkarımı bu boşluğa dayanmaktadır.\n\nKaynak bilgi: E15 kabul raporuna göre arşivde 18.032 satır vardır; sistem yalnızca 20 hücreyi örneklemiştir. Bunlardan üçü üretim serisi referanslarıyla eşleşmekte, diğer 17 hücre için karşılaştırma raporu bulunmamaktadır ve orijinal arşivin tamamı dava paketine eklenmemiştir.\n\nYorumum: 18.032 satırlık bir tabloda 20 hücrelik örnek, \"korunan üretim verileri dışarı aktarıldı\" iddiasını taşıyamaz. Üç hücrelik benzerlik, kalan 18.012 satır hakkında hiçbir şey söylemez. Üstelik paketin tamamı incelenmeden içerik hakkında kesin hüküm kurulamaz. Deniz'in izinli test paketi hazırladığı savunması, kayıtların gösterdiği ölçüde ayakta durmaktadır; savcılığın açıklaması ise kanıtlanmamış bir içerik varsayımına dayanır. Beraat talep ediyorum.",
+      "evidence": [
+        {
+          "id": "E4",
+          "title": "Veri sorumlusunun izin kapsamı mesajı",
+          "source": "Ece'nin kurumsal mesajı / 14 Ekim 2026 15.02",
+          "relatedIds": [
+            "E2",
+            "E3",
+            "E10",
+            "E19"
+          ],
+          "content": "\n        Ece'nin Deniz'e mesajı:\n\n        'Standart test kopyaları için önceki onay geçerli.\n        Gerçek üretim parametrelerini eklemeyin;\n        onlar için ayrıca konuşmamız gerekir.'\n\n        Mesaj Deniz'in hesabında 15.07'de açıldı.\n        Önceki yazışmadaki onay sentetik kalibrasyon\n        örneklerine ait.\n      "
+        },
+        {
+          "id": "E15",
+          "title": "Laboratuvar arşiv kabul raporu",
+          "source": "KuzeyTest kabul sistemi / 14 Ekim 2026 17.26",
+          "relatedIds": [
+            "E5",
+            "E10",
+            "E11",
+            "E16",
+            "E22"
+          ],
+          "content": "\n        17.26 kabul raporu A-741 içinde 18.032 satırlık\n        tablo bulunduğunu gösteriyor.\n\n        Sistem, arşivin 20 hücresini örnek olarak kaydetmiş.\n\n        Bunlardan üçü E11'deki son üretim serisine özgü\n        referans değerleriyle birebir eşleşiyor ve\n        onaylı v12 sentetik çıktısından farklı.\n\n        Diğer 17 hücre için karşılaştırma raporu yok.\n        Orijinal arşivin tamamı dava paketine eklenmemiş.\n      "
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "role": "PROSECUTION",
+      "name": "Savcı",
+      "text": "Sayın Mahkeme,\n\nSavunmanın bazı noktalarını kabul ediyorum. E4, onayın yalnızca sentetik kalibrasyon örneklerine ait olduğunu gösteriyor. Ancak kapsam sınırının varlığı ile ihlalin varlığı arasında bir boşluk vardır ve bunu gizlemek istemiyorum.\n\nKaynak bilgi, E4: Mesaj 15.02'de gönderilmiş, Deniz'in hesabında 15.07'de açılmıştır. Transfer saati kayıtta yoktur. Dolayısıyla mesajın transferden önce mi sonra mı okunduğu, bu aşamada kesin değildir. Bu nedenle E4'ü tek başına kasıt kanıtı olarak sunmuyorum; kasıt sorusu için sistem günlükleri ve transfer saati gerekir.\n\nKaynak bilgi, E15: Kabul raporu 18.032 satırlık bir arşivde 20 hücrelik bir örnek kaydetmiştir. Bu örneklerden üçü, E11'deki son üretim serisine ait referans değerlerle birebir eşleşmekte ve onaylı v12 sentetik çıktısından farklıdır. Diğer 17 hücre için karşılaştırma yapılmamıştır. Orijinal arşivin tamamı dava paketinde yoktur.\n\nYorum: Savunma, 18.012 satırın test verisi olduğunu ileri sürmektedir. Bu iddia da kanıtlanmış değildir. İki taraf da tamamını görmediği bir arşiv hakkında kesin sonuç çıkarıyor. Ancak 20 hücrelik bir örnekte üretim referanslarıyla birebir eşleşen üç kayıt, rastlantı olarak açıklanması güç bir bulgudur; sentetik test paketi üretim serisini içermemelidir. Bu bulgu, arşivde gerçek üretim verisi bulunduğunu göstermeye yeter; ancak bunun ne kadar olduğunu ve hangi amaçla aktarıldığını göstermez. Bu ölçü konusunda bir kesinlik iddia etmiyorum.\n\nTalebim: Savcılık olarak, A-741 arşivinin tamamının incelenmesini, E15'teki karşılaştırmanın 20 hücreden fazlasına genişletilmesini ve 14 Ekim transfer saatinin E4 mesajıyla birlikte günlüklerle eşleştirilmesini talep ediyorum. Bu kayıtlar gelmeden beraat sonucunu ya da mahkûmiyet sonucunu kesin bir dille savunmak doğru olmaz.\n\nKısacası: E4 kasıt konusunda belirsizdir, E15 ise üretim verisinin arşivde bulunduğunu gösteren somut bir bulgudur. Eksik kanıtlar tamamlanana kadar, savunmanın \"izinli test paketi\" açıklaması da kanıtla desteklenmiş değildir.",
+      "evidence": [
+        {
+          "id": "E4",
+          "title": "Veri sorumlusunun izin kapsamı mesajı",
+          "source": "Ece'nin kurumsal mesajı / 14 Ekim 2026 15.02",
+          "relatedIds": [
+            "E2",
+            "E3",
+            "E10",
+            "E19"
+          ],
+          "content": "\n        Ece'nin Deniz'e mesajı:\n\n        'Standart test kopyaları için önceki onay geçerli.\n        Gerçek üretim parametrelerini eklemeyin;\n        onlar için ayrıca konuşmamız gerekir.'\n\n        Mesaj Deniz'in hesabında 15.07'de açıldı.\n        Önceki yazışmadaki onay sentetik kalibrasyon\n        örneklerine ait.\n      "
+        },
+        {
+          "id": "E15",
+          "title": "Laboratuvar arşiv kabul raporu",
+          "source": "KuzeyTest kabul sistemi / 14 Ekim 2026 17.26",
+          "relatedIds": [
+            "E5",
+            "E10",
+            "E11",
+            "E16",
+            "E22"
+          ],
+          "content": "\n        17.26 kabul raporu A-741 içinde 18.032 satırlık\n        tablo bulunduğunu gösteriyor.\n\n        Sistem, arşivin 20 hücresini örnek olarak kaydetmiş.\n\n        Bunlardan üçü E11'deki son üretim serisine özgü\n        referans değerleriyle birebir eşleşiyor ve\n        onaylı v12 sentetik çıktısından farklı.\n\n        Diğer 17 hücre için karşılaştırma raporu yok.\n        Orijinal arşivin tamamı dava paketine eklenmemiş.\n      "
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "role": "LAWYER",
+      "name": "Avukat",
+      "text": "Sayın Mahkeme,\n\nSavcılık bu turda dürüst bir adım attı: E4'ün kasıt kanıtı olmadığını kabul etti. Geriye tek somut bulgu kalıyor: E15'teki üç hücrelik eşleşme. Bu bulgunun masum açıklaması tam da savcılığın hiç okumadığı teknik kayıtta, E10'da duruyor.\n\nKaynak bilgi (E10): \"KT-standard v12 sentetik değer üretir; 18.032 satırlık şemayı korur. Sentetik üretimde bazı genel kalibrasyon sabitleri değişmez, diğer üretim değerleri dönüştürülür.\" Ayrıca aynı kılavuz, kabul sisteminin yalnızca biçim denetlediğini belirtir.\n\nYorumum: E15'teki 18.032 satır sayısı, E10'da tarif edilen sentetik şablonun tam satır sayısıdır; bu tesadüf değil, aracın bilinen davranışıdır. Dahası, sentetik üretimde bazı genel kalibrasyon sabitlerinin değişmeden kaldığı açıkça yazılıdır. E15'in \"üretim serisine özgü referans değerlerle birebir eşleşme\" dediği üç hücre, tam olarak bu sabitlerin değişmeden geçmesiyle açıklanabilir. Yani savcılığın \"rastlantı olarak açıklanması güç\" dediği bulgu, rastlantı değil, kılavuzda yazılı bir mekanizmadır.\n\nAyrıca kabul sistemi yalnızca biçim denetlediği için, \"prod-compatible\" dosya adları ve sütunları kullanan meşru bir test paketi de üretim dosyası gibi görünecektir. E15'in benzerlik tespiti bir içerik analizi değil, biçim düzeyinde bir karşılaştırmadır.\n\nSavcılığın talebi olan ek inceleme, savunmanın aleyhine değil lehine işleyecektir: 18.032 satırın hangi kurala göre dönüştürüldüğü ortaya çıktığında, üç hücrenin değişmeyen sabitler olduğu görülecektir. Eksik kayıt nedeniyle beraat engellenemez; şüphe sanığın lehine yorumlanır. Beraat talep ediyorum.",
+      "evidence": [
+        {
+          "id": "E10",
+          "title": "Paketleme aracı kullanım kılavuzu",
+          "source": "Teknik dokümantasyon / Olay tarihinde geçerli",
+          "relatedIds": [
+            "E2",
+            "E5",
+            "E11",
+            "E19",
+            "E20"
+          ],
+          "content": "\n        prod-compatible, üretimle aynı dosya adlarını\n        ve sütunları kullanır.\n\n        KT-standard v12 sentetik değer üretir;\n        18.032 satırlık şemayı korur.\n\n        Sentetik üretimde bazı genel kalibrasyon sabitleri\n        değişmez, diğer üretim değerleri dönüştürülür.\n\n        Veri kaynağını etkin önayar ve ortam ayarları belirler.\n        Kabul sistemi yalnızca biçim denetler.\n      "
+        },
+        {
+          "id": "E15",
+          "title": "Laboratuvar arşiv kabul raporu",
+          "source": "KuzeyTest kabul sistemi / 14 Ekim 2026 17.26",
+          "relatedIds": [
+            "E5",
+            "E10",
+            "E11",
+            "E16",
+            "E22"
+          ],
+          "content": "\n        17.26 kabul raporu A-741 içinde 18.032 satırlık\n        tablo bulunduğunu gösteriyor.\n\n        Sistem, arşivin 20 hücresini örnek olarak kaydetmiş.\n\n        Bunlardan üçü E11'deki son üretim serisine özgü\n        referans değerleriyle birebir eşleşiyor ve\n        onaylı v12 sentetik çıktısından farklı.\n\n        Diğer 17 hücre için karşılaştırma raporu yok.\n        Orijinal arşivin tamamı dava paketine eklenmemiş.\n      "
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "role": "PROSECUTION",
+      "name": "Savcı",
+      "text": "Sayın Mahkeme,\n\nSavunmanın E10 üzerinden kurduğu açıklamayı dikkatle değerlendirdim. Bazı noktalarını kabul ediyorum, ama üç hücrenin masum açıklamasının kanıtlandığı görüşüne katılmıyorum.\n\nKabul ettiğim noktalar: E10, KT-standard v12'nin 18.032 satırlık şemayı koruduğunu yazıyor. Bu nedenle satır sayısının eşleşmesi tek başına üretim verisi kanıtı değildir. Ayrıca E15 kabul raporu, kabul sisteminin biçim düzeyinde bir karşılaştırma yaptığını gösterir. Bu bulguyu içerik kanıtı olarak fazla güçlü sunmuş olabilirim.\n\nAncak E10'un aynı metninde önemli bir cümle var: \"Veri kaynağını etkin önayar ve ortam ayarları belirler.\" Yani sentetik ya da üretim verisinin hangi kaynaktan geldiği bir yapılandırma sorusudur. Bu, savunmanın \"değişmeyen sabitler\" açıklamasını da yapılandırmaya bağlar. Paketin prod-compatible önayarla mı yoksa sentetik önayarla mı üretildiği, ortam ayarlarının 14 Ekim'de ne olduğu sorusu yanıtlanmadan savunma tamamlanmış sayılamaz.\n\nE15 ayrıca üç hücrenin \"son üretim serisine özgü referans değerlerle birebir eşleştiğini\" söylüyor. E10 ise değişmeyen değerleri \"genel kalibrasyon sabitleri\" olarak tanımlıyor. Savunma, bu üç hücrenin genel sabit olduğunu varsayıyor; oysa E15 onları üretim serisine özgü olarak işaretlemiştir. Bu iki tanım arasındaki farkı kayıtla kapatan henüz bir veri yok. Ayrıca prod-compatible dosya adları ve sütunların kullanılması, üretim dosyasına benzeyen bir paketin içinde üretim değerleri bulunmasını açıklamaz; yalnızca biçimi açıklar.\n\nDolayısıyla, E10'un varlığı savunmaya bir olasılık kazandırıyor, fakat kanıtlanmış bir açıklama sağlamıyor. Kasıt ve yapılandırma sorusu hâlâ açıktır.\n\nTalebim: 14 Ekim için önayar seçimi ve ortam ayarlarının günlükleri, E15'teki üç hücrenin genel sabit listesiyle karşılaştırılması ve A-741 arşivinin tamamı. Bu kayıtlar gelmeden, sanığın yapılandırma değişikliği yapmadığı ya da izinli test paketi hazırladığı sonucuna varmak için yeterli dayanak yoktur. Ben de bu noktada mahkûmiyet talebimi, bu kayıtların eksik olduğunu açıkça belirterek sürdürüyorum.",
+      "evidence": [
+        {
+          "id": "E10",
+          "title": "Paketleme aracı kullanım kılavuzu",
+          "source": "Teknik dokümantasyon / Olay tarihinde geçerli",
+          "relatedIds": [
+            "E2",
+            "E5",
+            "E11",
+            "E19",
+            "E20"
+          ],
+          "content": "\n        prod-compatible, üretimle aynı dosya adlarını\n        ve sütunları kullanır.\n\n        KT-standard v12 sentetik değer üretir;\n        18.032 satırlık şemayı korur.\n\n        Sentetik üretimde bazı genel kalibrasyon sabitleri\n        değişmez, diğer üretim değerleri dönüştürülür.\n\n        Veri kaynağını etkin önayar ve ortam ayarları belirler.\n        Kabul sistemi yalnızca biçim denetler.\n      "
+        },
+        {
+          "id": "E15",
+          "title": "Laboratuvar arşiv kabul raporu",
+          "source": "KuzeyTest kabul sistemi / 14 Ekim 2026 17.26",
+          "relatedIds": [
+            "E5",
+            "E10",
+            "E11",
+            "E16",
+            "E22"
+          ],
+          "content": "\n        17.26 kabul raporu A-741 içinde 18.032 satırlık\n        tablo bulunduğunu gösteriyor.\n\n        Sistem, arşivin 20 hücresini örnek olarak kaydetmiş.\n\n        Bunlardan üçü E11'deki son üretim serisine özgü\n        referans değerleriyle birebir eşleşiyor ve\n        onaylı v12 sentetik çıktısından farklı.\n\n        Diğer 17 hücre için karşılaştırma raporu yok.\n        Orijinal arşivin tamamı dava paketine eklenmemiş.\n      "
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "role": "LAWYER",
+      "name": "Avukat",
+      "text": "Sayın Mahkeme,\n\nSavcılık haklı bir soru sordu: \"Veri kaynağını etkin önayar ve ortam ayarları belirler.\" Bu sorunun cevabı kayıtlarda var ve cevap sanığın lehinedir.\n\nKaynak bilgi (E20): Bora, 14 Ekim 2026 saat 13.40'ta KT-standard v13'ü yayımlamıştır. v12 doğrudan sentetik kaynak seçiyordu; v13 ise ortamda tanımlı kaynağı, ortam tanımı yoksa önceki yerel ayarı kullanmaktadır. Dağıtım otomatiktir ve Deniz'in makinesinin güncellemeyi alma saati kayıtta yoktur. Değişiklik kaydında Deniz'in onayı bulunmamaktadır.\n\nYorumum: Bu kayıt, savcılığın aradığı \"yapılandırma değişikliği\"nin failini ve zamanını gösteriyor. Değişikliği Deniz yapmadı, onaylamadı ve hatta haberdar olduğu bile kanıtlanmadı. Üstelik değişiklik, transferden saatler önce, 13.40'ta yayımlandı. Yani arşiv, Deniz'in seçmediği bir önayarla, otomatik dağıtılan bir sürüm altında üretilmiş olabilir. Bu, E15'teki üç hücrelik eşleşmenin ve üretim kaynağına benzeyen değerlerin failin iradesinden bağımsız, teknik bir nedene dayandığını gösterir.\n\nSavcılık, \"bu kayıtlar gelmeden sonuç çıkarılamaz\" diyor. Oysa kayıt geldi: yapılandırmayı değiştiren kişi Deniz değildir ve onun onayı yoktur. Kasıt, bilerek yapılan bir eylem gerektirir; bilmediği bir otomatik güncellemenin sonucundan sorumlu tutulamaz. Ayrıca güncelleme saatinin kayıtta olmaması, şüpheyi ortadan kaldırmaz, sanık lehine yorumlanır.\n\nE15'in kendi sınırı da yerinde duruyor: 18.032 satırın yalnızca 20 hücresi incelenmiş, 17 hücre için karşılaştırma yok, arşivin tamamı dosyada değil. Eksik kanıtla mahkûmiyet kurulamaz. Beraat talep ediyorum.",
+      "evidence": [
+        {
+          "id": "E20",
+          "title": "KT-standard önayarının değişiklik kaydı",
+          "source": "Yapılandırma sunucusu / 14 Ekim 2026 13.40",
+          "relatedIds": [
+            "E5",
+            "E10",
+            "E19",
+            "E21"
+          ],
+          "content": "\n        Bora, 14 Ekim 13.40'ta KT-standard v13'ü yayımladı.\n\n        v12 doğrudan sentetik kaynak seçiyordu.\n        v13 ortamda tanımlı kaynağı, ortam tanımı yoksa\n        önceki yerel ayarı kullanıyor.\n\n        Dağıtım otomatik; Deniz'in makinesinin güncellemeyi\n        alma saati kayıtta yok.\n\n        Değişiklik kaydında Deniz onayı bulunmuyor.\n      "
+        },
+        {
+          "id": "E15",
+          "title": "Laboratuvar arşiv kabul raporu",
+          "source": "KuzeyTest kabul sistemi / 14 Ekim 2026 17.26",
+          "relatedIds": [
+            "E5",
+            "E10",
+            "E11",
+            "E16",
+            "E22"
+          ],
+          "content": "\n        17.26 kabul raporu A-741 içinde 18.032 satırlık\n        tablo bulunduğunu gösteriyor.\n\n        Sistem, arşivin 20 hücresini örnek olarak kaydetmiş.\n\n        Bunlardan üçü E11'deki son üretim serisine özgü\n        referans değerleriyle birebir eşleşiyor ve\n        onaylı v12 sentetik çıktısından farklı.\n\n        Diğer 17 hücre için karşılaştırma raporu yok.\n        Orijinal arşivin tamamı dava paketine eklenmemiş.\n      "
+        }
+      ]
+    }
+  ]
+}
